@@ -102,6 +102,7 @@ const {
   fetchJson, 
   sleep
   } = require('./library/myfunc'); 
+const rellImg = fs.readFileSync('./library/media/Thumbnail.jpg');
   
 //———————————————[ DATA FUNCTION ]———————————————\\
 let statusUser = "Free User"
@@ -252,7 +253,7 @@ const rBug = (teks) => {
   return Deunamist.sendMessage(m.chat, msg, { quoted: fQ.revPayQ })
 }
 
-const rellImg = fs.readFileSync('./library/media/Thumbnail.jpg');
+
 
 //———————————————[ COMMAND ]———————————————\\
 switch (command) {
